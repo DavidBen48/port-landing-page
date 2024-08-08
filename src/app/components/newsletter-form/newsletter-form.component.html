@@ -1,0 +1,36 @@
+<section class="form-section">
+    <div class="text">
+        <h3>
+            Sobre mim
+        </h3>
+        <p>
+            Nascido em 2001, atualmente moro em Belford Roxo - Rio de Janeiro.
+        </p><br>
+        <p>
+            Atualmente, sou estudante de Analise e Desenvolvimento de Sistemas - UNESA, 
+            cursando um Bootcamp de Desenvolvimento FullStack pela Escola Britânica de 
+            Artes Criativas. Possuo também um curso extra curricular de 280h de Analise de Dados
+            pela SoulCode Academy.
+        </p><br>
+        <p>
+            Não possuo experiência na área de Desenvolvimento Frontend ou Backend, porém tenho mais de 
+            1 ano de experiência em Estágio na área de Database, trabalhando com SQL (PostgreSQL, Firebird e MySQL) e 
+            Não-Relacionais (MongoDB) e procuro minha primeira oportunidade no Mercado de trabalho
+            nessa área de Desenvolvimento.
+        </p>
+    </div>
+    <form [formGroup]="newsletterForm">
+        <label for="name">Nome Completo</label>
+        <input id="name" formControlName="name"/>
+        <label for="email">Email</label>
+        <input id="email" formControlName="email"/>
+        <btn-primary 
+            btn-text="se inscreva" 
+            variant="secondary"
+            (submit)="onSubmit()"
+            [disabled]="!newsletterForm.valid"
+            [loading]="loading()"
+        >
+        </btn-primary>
+    </form>
+</section>

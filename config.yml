@@ -1,0 +1,5 @@
+title: Portfolio - David Ben
+description: Um site simples usando Angular como principal ferramenta.
+url: "https://davidben48.github.io/port-landing-page/"
+baseurl: "/port-landing-page"
+theme: jekyll-theme-primer

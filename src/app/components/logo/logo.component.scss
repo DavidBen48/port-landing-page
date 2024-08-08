@@ -1,0 +1,40 @@
+@import './../../../color-variables.scss';
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3%;
+    
+    h1 {
+        color: $secondary-color;
+        font-size: 50px;
+        text-decoration: none;
+    }
+
+    .line-logo {
+        height: 10px;
+        width: 10%;
+        background: -webkit-linear-gradient(180deg, $d-1, $d-2);
+    
+        #line-logo-right {
+            background: -webkit-linear-gradient(0deg, $d-1, $d-2);
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .line {
+        h1 {
+            font-size: 35px;
+        }
+
+        .line-logo {
+            height: 8px;
+            width: 7.5%;
+        }
+    }
+    
+}

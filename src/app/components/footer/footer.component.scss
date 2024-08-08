@@ -1,0 +1,52 @@
+@import './../../../color-variables.scss';
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    .logo {
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .icons {
+            color: $primary-text;
+            font-size: 35px;
+            transition: .3s ease;
+        }
+
+        .icons:hover {
+            color: $d-1;
+        }
+
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        margin: 5px 0;
+
+        .logo {
+            h3 {
+                font-size: 25px;
+            }
+        }
+        
+        .socials {
+            gap: 10px;
+
+            .icons {
+                font-size: 25px;
+            }
+        
+        }
+    }    
+}

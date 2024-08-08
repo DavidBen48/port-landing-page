@@ -1,0 +1,50 @@
+@import "../../../color-variables.scss";
+
+.btn {
+    border: none;
+    border-radius: 30px;
+    
+    transition: .5s ease;
+
+    cursor: pointer;
+    padding: 16px 20px;
+    
+    &:disabled {
+        opacity: 0.6;
+    }
+
+    &.primary {
+        color: white;
+        background: -webkit-linear-gradient(45deg, $d-1, $d-2);
+
+        border: 1.5px solid black;
+        
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    &.primary:hover {
+        background: -webkit-linear-gradient(135deg, $d-1, $d-2);
+    }
+
+    &.secondary {
+        background: white;
+        color: $primary-text;
+
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn {
+        padding: 20px 40px;
+
+        .primary {
+            font-size: 24px;
+        } 
+        .secondary {
+            font-size: 16px;
+        }
+    }
+}
